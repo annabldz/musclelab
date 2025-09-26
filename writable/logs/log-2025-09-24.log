@@ -1,0 +1,60 @@
+ERROR - 2025-09-24 10:54:40 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2025-09-24 10:54:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 I:\My Drive\gym\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 I:\My Drive\gym\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 I:\My Drive\gym\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 I:\My Drive\gym\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 I:\My Drive\gym\app\Controllers\Yap.php(14): CodeIgniter\BaseModel->findAll()
+#5 I:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\Yap->index()
+#6 I:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Yap))
+#7 I:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 I:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('I:\\My Drive\\gym...')
+#10 {main}
+ERROR - 2025-09-24 10:55:03 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2025-09-24 10:55:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 I:\My Drive\gym\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 I:\My Drive\gym\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 I:\My Drive\gym\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 I:\My Drive\gym\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 I:\My Drive\gym\app\Controllers\Yap.php(14): CodeIgniter\BaseModel->findAll()
+#5 I:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\Yap->index()
+#6 I:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Yap))
+#7 I:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 I:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('I:\\My Drive\\gym...')
+#10 {main}
+ERROR - 2025-09-24 11:00:00 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2025-09-24 11:00:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 I:\My Drive\gym\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 I:\My Drive\gym\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 I:\My Drive\gym\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 I:\My Drive\gym\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 I:\My Drive\gym\app\Controllers\Yap.php(14): CodeIgniter\BaseModel->findAll()
+#5 I:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\Yap->index()
+#6 I:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Yap))
+#7 I:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 I:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('I:\\My Drive\\gym...')
+#10 {main}
+CRITICAL - 2025-09-24 11:04:38 --> Undefined variable $data
+#0 I:\My Drive\gym\app\Controllers\Gym.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'I:\\My Drive\\gym...', 9)
+#1 I:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\Gym->index()
+#2 I:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gym))
+#3 I:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 I:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 I:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('I:\\My Drive\\gym...')
+#6 {main}
+CRITICAL - 2025-09-24 11:44:06 --> Invalid file: facility.php
+#0 G:\My Drive\gym\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('facility.php')
+#1 G:\My Drive\gym\system\Common.php(1089): CodeIgniter\View\View->render('facility', Array, true)
+#2 G:\My Drive\gym\app\Controllers\Mey.php(9): view('facility')
+#3 G:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\Mey->facility()
+#4 G:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mey))
+#5 G:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 G:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 G:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('G:\\My Drive\\gym...')
+#8 {main}

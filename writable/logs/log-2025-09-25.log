@@ -1,0 +1,50 @@
+CRITICAL - 2025-09-25 10:32:04 --> Invalid file: membership_form.php
+#0 J:\My Drive\gym\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('membership_form...')
+#1 J:\My Drive\gym\system\Common.php(1089): CodeIgniter\View\View->render('membership_form', Array, true)
+#2 J:\My Drive\gym\app\Controllers\Membership.php(12): view('membership_form')
+#3 J:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\Membership->index()
+#4 J:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Membership))
+#5 J:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 J:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('J:\\My Drive\\gym...')
+#8 {main}
+CRITICAL - 2025-09-25 10:32:53 --> Invalid file: membership_form.php
+#0 J:\My Drive\gym\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('membership_form...')
+#1 J:\My Drive\gym\system\Common.php(1089): CodeIgniter\View\View->render('membership_form', Array, true)
+#2 J:\My Drive\gym\app\Controllers\Membership.php(12): view('membership_form')
+#3 J:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\Membership->index()
+#4 J:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Membership))
+#5 J:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 J:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('J:\\My Drive\\gym...')
+#8 {main}
+CRITICAL - 2025-09-25 10:42:59 --> Invalid file: navbar_view.php
+#0 J:\My Drive\gym\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('navbar_view.php')
+#1 J:\My Drive\gym\system\Common.php(1089): CodeIgniter\View\View->render('navbar_view', Array, true)
+#2 J:\My Drive\gym\app\Controllers\Navbarcontroller.php(11): view('navbar_view')
+#3 J:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\NavbarController->index()
+#4 J:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NavbarController))
+#5 J:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 J:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('J:\\My Drive\\gym...')
+#8 {main}
+CRITICAL - 2025-09-25 10:49:49 --> Invalid file: navbar_view.php
+#0 J:\My Drive\gym\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('navbar_view.php')
+#1 J:\My Drive\gym\system\Common.php(1089): CodeIgniter\View\View->render('navbar_view', Array, true)
+#2 J:\My Drive\gym\app\Controllers\Pages.php(12): view('navbar_view')
+#3 J:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\Pages->navbar()
+#4 J:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 J:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 J:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('J:\\My Drive\\gym...')
+#8 {main}
+CRITICAL - 2025-09-25 10:50:14 --> Invalid file: navbar_view.php
+#0 J:\My Drive\gym\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('navbar_view.php')
+#1 J:\My Drive\gym\system\Common.php(1089): CodeIgniter\View\View->render('navbar_view', Array, true)
+#2 J:\My Drive\gym\app\Controllers\Pages.php(12): view('navbar_view')
+#3 J:\My Drive\gym\system\CodeIgniter.php(832): App\Controllers\Pages->navbar()
+#4 J:\My Drive\gym\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 J:\My Drive\gym\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\My Drive\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 J:\My Drive\gym\system\Commands\Server\rewrite.php(43): require_once('J:\\My Drive\\gym...')
+#8 {main}
