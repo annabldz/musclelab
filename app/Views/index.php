@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master Gym</title>
+  <title>Muscle Lab</title>
+  <link rel="icon" type="image/png" href="<?=base_url ('assets/img/muscle.png')?>">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -120,7 +122,7 @@
               <h1>Come JOIN US</h1>
               <p>Upgrade your experience & raih tubuh ideal bersama kami.</p>
               <div class="button-group">
-                  <a href="#package" class="btn-primary">Lihat Paket</a>
+                  <a href="#location" class="btn-primary">Lihat Lokasi</a>
               </div>
               </div>
           </div>
