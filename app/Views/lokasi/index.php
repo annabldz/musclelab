@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gym Landing Page</title>
+  <title>Muscle Lab</title>
+    <link rel="icon" type="image/png" href="<?=base_url ('assets/img/muscle.png')?>">
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,9 +20,9 @@
 
      .container {
       width: 100%;
-      max-width: 1200px; /* batas lebar konten */
-      margin: 0 auto;    /* center */
-      padding: 0 20px;   /* jarak kiri kanan */
+      max-width: 1200px;
+      margin: 0 auto; 
+      padding: 0 20px; 
     }
 
     nav {
@@ -28,14 +30,14 @@
       top: 0;
       left: 0;
       width: 100%;
-      padding: 20px 40px; /* kurangi biar nggak geser */
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: rgba(25, 0, 25, 0.7);
       backdrop-filter: blur(10px);
       z-index: 10;
-      box-sizing: border-box; /* biar padding dihitung di dalam */
+      box-sizing: border-box; 
     }
 
     nav .logo {
@@ -231,9 +233,8 @@
   </div>
 
   <div class="facility-grid">
-    <!-- Card 1 -->
     <div class="facility-card">
-      <img src="assetslanding/img/r1.jpg" alt="Batam Center">
+      <img src="assets/img/r1.jpg" alt="Batam Center">
       <div class="card-content">
         <h4>Batam</h4>
         <h3>BATAM CENTER</h3>
@@ -246,9 +247,8 @@
     </div>
 
 
-    <!-- Card 2 -->
     <div class="facility-card">
-      <img src="assetslanding/img/r2.jpg" alt="Tiban">
+      <img src="assets/img/r2.jpg" alt="Tiban">
       <div class="card-content">
         <h4>Batam</h4>
         <h3>TIBAN</h3>
@@ -260,9 +260,8 @@
             </a>
     </div>
 
-    <!-- Card 3 -->
     <div class="facility-card">
-      <img src="assetslanding/img/r3.jpg" alt="Baloi">
+      <img src="assets/img/r3.jpg" alt="Baloi">
       <div class="card-content">
         <h4>Batam</h4>
         <h3>BALOI</h3>
@@ -275,7 +274,7 @@
     </div>
 
     <div class="facility-card">
-      <img src="assetslanding/img/r3.jpg" alt="Baloi">
+      <img src="assets/img/r3.jpg" alt="Baloi">
       <div class="card-content">
         <h4>Batam</h4>
         <h3>BALOI</h3>
