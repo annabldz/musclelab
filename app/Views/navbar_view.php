@@ -65,7 +65,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?=base_url('/')?>">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="#location">Lokasi</a></li>
           <li class="nav-item"><a class="nav-link" href="#why-choose">Why Choose Us</a></li>
           <li class="nav-item"><a class="nav-link" href="#facility">Fasilitas</a></li>
