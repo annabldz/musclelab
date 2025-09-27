@@ -135,19 +135,19 @@
 
         <div class="facilities">
           <div class="facility">
-            <img src="<?= base_url('assetslanding/img/r1.jpg') ?>" alt="Cardio">
+            <img src="<?= base_url('assets/img/r1.jpg') ?>" alt="Cardio">
             <h4>Batam</h4>
             <h2>BATAM CENTER</h2>
             <a href="#" class="detail-btn">Lihat Detail</a>
           </div>
           <div class="facility">
-            <img src="<?= base_url('assetslanding/img/r2.jpg') ?>" alt="Dumbbell Area">
+            <img src="<?= base_url('assets/img/r2.jpg') ?>" alt="Dumbbell Area">
             <h4>Batam</h4>
             <h2>TIBAN</h2>
             <a href="#" class="detail-btn">Lihat Detail</a>
           </div>
           <div class="facility">
-            <img src="<?= base_url('assetslanding/img/r3.jpg') ?>" alt="Weight Training">
+            <img src="<?= base_url('assets/img/r3.jpg') ?>" alt="Weight Training">
             <h4>Batam</h4>
             <h2>BALOI</h2>
             <a href="#" class="detail-btn">Lihat Detail</a>
