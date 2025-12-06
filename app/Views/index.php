@@ -17,14 +17,14 @@
     #facility {background: linear-gradient(135deg, #000000 0%, #1A1A1A 40%, #A000FF 100%); }
     #facility h2 {font-weight: 700; color: #fff;}
     #facility p.text-muted {font-size: 1.5rem; color: #fff !important;}
-    #facility .card {border-radius: 1rem; overflow: hidden;}
+    /* #facility .card {border-radius: 1rem; overflow: hidden;}
     #facility .card img {width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 0.75rem;}
     #facility .swiper {padding-bottom: 40px;}
     #facility .swiper-slide {height: 520px;}
     @media (max-width: 900px) {
         #facility .swiper {padding-bottom: 40px;}
         #facility .swiper-slide {height: auto;}
-        #facility p.text-muted {font-size: 1.2rem; color: #fff !important;}}
+        #facility p.text-muted {font-size: 1.2rem; color: #fff !important;}} */
 
     #why-choose {background: linear-gradient(135deg, #000000 0%, #1A1A1A 40%);}
     #why-choose .ye {padding: 80px 20px; max-width: 1200px; margin: auto; }
@@ -39,6 +39,26 @@
     #why-choose .why-card p {font-size: 1.2rem; color: #666;}
     @media (max-width: 900px) {
     #why-choose .why-cards {grid-template-columns: 1fr;}}
+
+    .swiperMain { width: 100%; max-width: 900px; margin: 0 auto; border-radius: 1rem; overflow: hidden; }
+    .swiperMain .swiper-slide { display: flex; align-items: center; justify-content: center; }
+    .swiperMain .swiper-slide .card { border-radius: 1rem; overflow: hidden; width: 100%; }
+    .swiperMain .swiper-slide img { width: 100%; height: 500px; object-fit: cover; border-radius: 1rem; }
+
+    .swiperThumbs { width: 100%; max-width: 900px; margin: 0 auto; padding: 10px 0; }
+    .swiperThumbs .swiper-slide { width: 110px; height: 85px; opacity: 0.5; cursor: pointer; transition: all 0.3s ease; border-radius: 0.6rem; overflow: hidden; border: 2px solid transparent; }
+    .swiperThumbs .swiper-slide img { width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem; }
+    .swiperThumbs .swiper-slide-thumb-active { opacity: 1; border-color: #A000FF; transform: scale(1.08); box-shadow: 0 4px 15px rgba(160, 0, 255, 0.5); }
+
+    @media (max-width: 900px) {
+        .swiperMain .swiper-slide img { height: 350px; }
+        .swiperThumbs .swiper-slide { width: 90px; height: 70px; }
+    }
+
+    @media (max-width: 480px) {
+        .swiperMain .swiper-slide img { height: 280px; }
+        .swiperThumbs .swiper-slide { width: 70px; height: 55px; }
+    }
 
     .app-section {background: linear-gradient(135deg, #000000 0%, #1A1A1A 40%);}
     .app-section .ye {padding: 80px 20px; max-width: 1200px; margin: auto; }
@@ -64,7 +84,7 @@
     .app-section .app-text h2 {font-size: 2rem;}}
 
         /* ---------NAT----------- */
-    .section-solusi-retail {width:100%;min-height:550px;background:url('assets/img/gym.jpg') no-repeat center center/cover;background-attachment:fixed;display:flex;justify-content:center;align-items:center;text-align:center;color:#fff;position:relative;padding:60px 20px;overflow:hidden;}
+    .section-solusi-retail {width:100%;min-height:550px;background:url('assets/img/gym/20221122_221250_2_11zon.jpg') no-repeat center center/cover;background-attachment:fixed;display:flex;justify-content:center;align-items:center;text-align:center;color:#fff;position:relative;padding:60px 20px;overflow:hidden;}
     .section-solusi-retail::before {content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.55);z-index:1;}
     .section-solusi-retail .solusi-container {display:flex;justify-content:center;align-items:center;flex-wrap:wrap;max-width:1200px;margin:0 auto;padding:40px 20px;position:relative;z-index:2;text-align:center;}
     .section-solusi-retail .left-content {position:relative;z-index:2;max-width:800px;margin:0 auto;padding:20px;}
@@ -137,21 +157,9 @@
 
         <div class="facilities">
           <div class="facility">
-            <img src="<?= base_url('assets/img/r1.jpg') ?>" alt="Cardio">
-            <h4>Batam</h4>
-            <h2>BATAM CENTER</h2>
-            <a href="#" class="detail-btn">Lihat Detail</a>
-          </div>
-          <div class="facility">
             <img src="<?= base_url('assets/img/r2.jpg') ?>" alt="Dumbbell Area">
             <h4>Batam</h4>
             <h2>TIBAN</h2>
-            <a href="#" class="detail-btn">Lihat Detail</a>
-          </div>
-          <div class="facility">
-            <img src="<?= base_url('assets/img/r3.jpg') ?>" alt="Weight Training">
-            <h4>Batam</h4>
-            <h2>BALOI</h2>
             <a href="#" class="detail-btn">Lihat Detail</a>
           </div>
         </div>
@@ -186,39 +194,45 @@
     </section>
 
     <section id="facility" class="py-5 bg-light">
-        <div class="container">
-        <div class="text-center mb-5">
-            <h2 style="font-size: 40px;">Fasilitas Gym</h2>
-            <p class="text-muted">Latihan jadi lebih menyenangkan dengan fasilitas di Mucsle Lab Gym!</p>
-        </div>
+      <div class="container">
+          <div class="text-center mb-5">
+              <h2 style="font-size: 40px;">Fasilitas Gym</h2>
+              <p class="text-muted">Latihan jadi lebih menyenangkan dengan fasilitas di Muscle Lab Gym!</p>
+          </div>
 
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="card shadow-sm border-0">
-                <img src="<?=base_url('assets/img/gym-4.jpg')?>" alt="Alat Fitness Modern">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card shadow-sm border-0">
-                <img src="<?=base_url('assets/img/gym-1.jpg')?>" alt="Ruang Studio">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card shadow-sm border-0">
-                <img src="<?=base_url('assets/img/gym-3.jpg')?>" alt="Ruang Ganti & Loker">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card shadow-sm border-0">
-                <img src="<?=base_url('assets/img/gym-2.jpg')?>" alt="Ruang Ganti & Loker">
-                </div>
-            </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
+          <div class="swiper swiperMain mb-3">
+              <div class="swiper-wrapper">
+                  <?php 
+                  $folder_path = FCPATH . 'assets/img/gym/';
+                  $images = glob($folder_path . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+                  
+                  foreach($images as $image): 
+                      $filename = basename($image);
+                  ?>
+                  <div class="swiper-slide">
+                      <div class="card shadow-sm border-0">
+                          <img src="<?=base_url('assets/img/gym/'.$filename)?>" alt="Fasilitas Gym">
+                      </div>
+                  </div>
+                  <?php endforeach; ?>
+              </div>
+          </div>
 
-        </div>
+          <div class="swiper swiperThumbs">
+              <div class="swiper-wrapper">
+                  <?php 
+                  $images = glob($folder_path . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+                  
+                  foreach($images as $image): 
+                      $filename = basename($image);
+                  ?>
+                  <div class="swiper-slide">
+                      <img src="<?=base_url('assets/img/gym/'.$filename)?>" alt="Fasilitas Gym">
+                  </div>
+                  <?php endforeach; ?>
+              </div>
+          </div>
+      </div>
     </section>
 
     <section class="app-section" id="apk">
@@ -271,8 +285,8 @@
         <div class="col-md-4">
           <h5>Kontak</h5>
           <p>Email: info@musclelabgym.com</p>
-          <p>Telp: +62 812-3456-7890</p>
-          <p>Alamat: Jl. Kesehatan No.12, Jakarta</p>
+          <p>Telp: +62 821-3488-8071</p>
+          <p>Alamat: Tiban Petra Mandiri. Block D2 No 3 Batam</p>
         </div>
       </div>
 
@@ -316,6 +330,38 @@
     window.addEventListener('load', revealCards);
   </script>
 
+
+  <script>
+    var swiperThumbs = new Swiper(".swiperThumbs", {
+      spaceBetween: 10,
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesProgress: true,
+      centeredSlides: false,
+      breakpoints: {
+        320: {
+            spaceBetween: 8
+        },
+        768: {
+            spaceBetween: 10
+        },
+        1024: {
+            spaceBetween: 12
+        }
+      }
+    });
+
+    var swiperMain = new Swiper(".swiperMain", {
+      spaceBetween: 10,
+      effect: 'fade',
+      fadeEffect: {
+          crossFade: true
+      },
+      thumbs: {
+          swiper: swiperThumbs,
+      },
+    });
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
