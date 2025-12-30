@@ -21,8 +21,8 @@
     #why-choose h2 {font-weight: 700; font-size: 3rem; margin-bottom: 15px; position: relative; color: #fff;}
     #why-choose h2::after {content: ''; display: block;width: 200px; height: 4px; background: linear-gradient(135deg, #A000FF 40%, #fff 40%); animation: gradientShift 12s ease infinite; margin: 12px auto 0; border-radius: 2px;}
     #why-choose .why-text p {font-size: 1.2rem; color: #fff;max-width: 700px; margin: auto;}
-    #why-choose .why-cards {display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;}
-    #why-choose .why-card {background: #fff; border-radius: 1rem; padding: 30px 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); text-align: center; transition: all 0.4s ease; opacity: 0; transform: translateY(30px); max-width: 350px; flex: 1;}
+    #why-choose .why-cards {display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; justify-content: center; align-items: center;}
+    #why-choose .why-card {background: #fff; border-radius: 1rem; padding: 30px 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); text-align: center; transition: all 0.4s ease; opacity: 0; transform: translateY(30px); flex: 1;}
     #why-choose .why-card.show {opacity: 1; transform: translateY(0);}
     #why-choose .why-card:hover {transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.15);}
     #why-choose .why-card h5 {font-weight: 600; margin-bottom: 10px; font-size: 1.5rem;}
@@ -79,7 +79,7 @@
     .section-solusi-retail .left-content {position:relative;z-index:2;max-width:800px;margin:0 auto;padding:20px;}
     .section-solusi-retail h1 {font-size:3.5rem;margin-bottom:20px;font-weight:bold;}
     .section-solusi-retail p {font-size:1.25rem;margin-bottom:30px;}
-    .section-solusi-retail .btn-primary {background:#ffb3ff;color:#330033;padding:12px 30px;border-radius:50px;font-size:1rem;font-weight:800;text-decoration:none;transition:0.3s;}
+    .section-solusi-retail .btn-primary {background:#A000FF;color:#fff;padding:12px 30px;border-radius:50px;font-size:1rem;font-weight:800;text-decoration:none;transition:0.3s;}
     .section-solusi-retail .primary {background-color:#003366;color:#fff;border:none;}
     .section-solusi-retail .primary:hover {background:#800080;box-shadow:0 4px 15px rgba(0,0,0,0.3);}
     @media(max-width:768px){.section-solusi-retail{background-attachment:scroll;background-size:cover;background-position:center center;background-repeat:no-repeat;}.section-solusi-retail .solusi-container{flex-direction:column;text-align:center;padding:40px 20px;}.section-solusi-retail .left-content{max-width:100%;}.section-solusi-retail h1{font-size:30px;}.section-solusi-retail .button-group{flex-direction:column;align-items:center;}.section-solusi-retail .btn{width:100%;max-width:300px;}}
@@ -87,7 +87,7 @@
     .container {width:100%;max-width:1200px;margin:0 auto;padding:0 20px;}
     .section .facilities,.section .packages {max-width:1200px;margin:0 auto;}
     
-    nav {position:fixed;top:0;left:0;width:100%;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(25,0,25,0.7);backdrop-filter:blur(10px);z-index:10;box-sizing:border-box;}
+    nav {position:fixed;top:0;left:0;width:100%;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;background: linear-gradient(135deg, #000000 0%, #1A1A1A 40%, #A000FF 100%); backdrop-filter:blur(10px);z-index:10;box-sizing:border-box;}
     nav .logo {font-size:1.6rem;font-weight:800;background:linear-gradient(90deg,#ff00ff,#990099);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
     nav ul {list-style:none;display:flex;gap:40px;margin:0;padding:0;}
     nav ul li a {text-decoration:none;color:#fff;font-weight:600;transition:0.3s;}
@@ -147,16 +147,197 @@
       .facility-header h2 {font-size: 1.8rem;}
     }
     
-    .facility-header .see-all {font-size:1rem;font-weight:500;color:#ffb3ff;text-decoration:none;transition:0.3s;white-space: nowrap;}
-    .facility-header .see-all:hover {color:#ffb3ff;}
+    .facility-header .see-all {font-size:1rem;font-weight:500;color:#A000FF;text-decoration:none;transition:0.3s;white-space: nowrap;}
+    .facility-header .see-all:hover {color:#A000FF;}
     .detail-btn {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:10px 20px;background:#800080;color:#fff;border-radius:25px;font-weight:600;text-decoration:none;opacity:0;transition:0.3s;}
     .facility:hover .detail-btn {opacity:1;transform:translate(-50%,-50%) scale(1.05);}
 
-    footer.footer-gradient {background: linear-gradient(135deg, #A000FF 0%, #000000 50%, #FFFFFF 100%);background-size: 300% 300%;animation: gradientShift 12s ease infinite;color: #fff;padding: 50px 0 20px;font-family: 'Poppins', sans-serif;}
+    footer.footer-gradient {background: linear-gradient(135deg, #A000FF 0%, #000000 50%, #A000FF 100%);background-size: 300% 300%;animation: gradientShift 12s ease infinite;color: #fff;padding: 50px 0 20px;font-family: 'Poppins', sans-serif;}
     @keyframes gradientShift {
       0%   { background-position: 0% 50%; }
       50%  { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
+    }
+
+    .instagram-section {
+      background: linear-gradient(135deg, #1A1A1A 0%, #000000 40%);
+      padding: 20px 20px;
+      width: 100%;
+    }
+
+    .instagram-section .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .instagram-section h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .instagram-section p {
+      font-size: 1.25rem;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .instagram-section .instagram-embed {
+      max-width: 540px;
+      width: 100%;
+      height: 500px;
+      border-radius: 1rem;
+      box-shadow: 0 6px 20px rgba(160, 0, 255, 0.3);
+      border: 2px solid rgba(160, 0, 255, 0.3);
+      background: #000;
+    }
+
+    @media (max-width: 768px) {
+      .instagram-section {
+        padding: 30;
+      }
+
+      .instagram-section h2 {
+        font-size: 32px;
+      }
+
+      .instagram-section p {
+        font-size: 1.1rem;
+      }
+
+      .instagram-section .instagram-embed {
+        height: 520px !important;
+        border-radius: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .instagram-section h2 {
+        font-size: 28px;
+      }
+
+      .instagram-section p {
+        font-size: 1rem;
+      }
+
+      .instagram-section .instagram-embed {
+        height: 480px !important;
+      }
+    }
+
+    .instagram-section .instagram-embed {
+      transition: opacity 0.3s ease;
+    }
+
+    .instagram-section .instagram-embed:not([src]) {
+      opacity: 0.5;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(135deg, #1A1A1A 0%, #000000 100%);
+      backdrop-filter: blur(10px);
+      padding: 12px 0;
+      z-index: 1000;
+      box-shadow: 0 -4px 20px rgba(160, 0, 255, 0.3);
+      border-top: 2px solid rgba(160, 0, 255, 0.3);
+      display: none;
+    }
+
+    .bottom-nav-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 5px;
+      transition: all 0.3s ease;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+    }
+
+    .nav-item:last-child {
+      border-right: none;
+    }
+
+    .nav-item:hover {
+      color: #A000FF;
+      transform: translateY(-3px);
+    }
+
+    .nav-item:active {
+      transform: scale(0.95);
+    }
+
+    .nav-item i {
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    .nav-item p {
+      font-size: 11px;
+      margin: 0;
+      font-weight: 500;
+    }
+   
+    @media (max-width: 768px) {
+      .bottom-nav {
+        display: block;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-item i {
+        font-size: 20px;
+      }
+      
+      .nav-item p {
+        font-size: 10px;
+      }
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    nav .logo img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    nav .logo img[alt="Logo"]:first-of-type {
+      display: block;
+    }
+
+    nav .logo img[alt="Logo"]:last-of-type {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      nav .logo img[alt="Logo"]:first-of-type {
+        display: none;
+      }
+      
+      nav .logo img[alt="Logo"]:last-of-type {
+        display: block;
+        height: 40px;
+      }
     }
     footer h5 {font-weight: 700;margin-bottom: 20px;}
     footer a {color: #f8f9fa;text-decoration: none;transition: 0.3s;}
@@ -166,7 +347,11 @@
 </head>
 <body>
   <nav>
-    <div class="logo">Muscle Lab Gym</div>
+    <div class="logo">
+      <img src="<?= base_url('assets/logo/LogoText.png')?>" alt="Logo">
+      <img src="<?= base_url('assets/logo/icon.png')?>" alt="Logo">
+    </div>
+
     <button class="menu-toggle" id="menuToggle">
       <span></span>
       <span></span>
@@ -175,7 +360,7 @@
     <ul id="navMenu">
       <li><a href="#home">Beranda</a></li>
       <li><a href="#location">Lokasi</a></li>
-      <li><a href="#why-choose">Why Choose Us</a></li>
+      <li><a href="#why-choose">Unggulan</a></li>
       <li><a href="#facility">Fasilitas</a></li>
       <li><a href="#apk">Aplikasi</a></li>
     </ul>
@@ -279,6 +464,20 @@
     </div>
   </section>
 
+  <section class="instagram-section" id="instagram">
+    <div class="container py-5">
+      <div class="d-flex justify-content-center">
+        <iframe
+          src="https://www.instagram.com/musclelab.batam/embed"
+          frameborder="0"
+          scrolling="no"
+          class="instagram-embed"
+          style="max-width: 540px; width: 100%; border-radius: 1rem; background: #000; box-shadow: 0 6px 20px rgba(0,0,0,0.15);"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
   <section class="app-section" id="apk">
     <div class="ye">
       <div class="app-container">
@@ -321,7 +520,7 @@
           <ul class="list-unstyled">
             <li><a href="#home">Beranda</a></li>
             <li><a href="#location">Lokasi</a></li>
-            <li><a href="#why-choose">Why Choose Us</a></li>
+            <li><a href="#why-choose">Unggulan</a></li>
             <li><a href="#facility">Fasilitas</a></li>
             <li><a href="#apk">Aplikasi</a></li>
           </ul>
@@ -340,6 +539,35 @@
       </div>
     </div>
   </footer>
+
+  <div class="bottom-nav">
+    <div class="bottom-nav-grid">
+      <a href="#home" class="nav-item">
+        <i class="bi bi-house-fill"></i>
+        <p>Beranda</p>
+      </a>
+      
+      <a href="#location" class="nav-item">
+        <i class="bi bi-geo-alt-fill"></i>
+        <p>Lokasi</p>
+      </a>
+      
+      <a href="#why-choose" class="nav-item">
+        <i class="bi bi-star-fill"></i>
+        <p>Unggulan</p>
+      </a>
+
+      <a href="#facility" class="nav-item">
+        <i class="bi bi-tag-fill"></i>
+        <p>Fasilitas</p>
+      </a>
+
+      <a href="#apk" class="nav-item">
+        <i class="bi bi-phone-fill"></i>
+        <p>Aplikasi</p>
+      </a>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
