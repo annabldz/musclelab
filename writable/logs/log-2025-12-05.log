@@ -1,0 +1,12 @@
+CRITICAL - 2025-12-05 22:55:39 --> Undefined variable $facilities
+#0 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\app\Views\index.php(283): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\KANTOR...', 283)
+#1 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\system\View\View.php(210): include('C:\\Users\\KANTOR...')
+#2 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\app\Controllers\Gym.php(9): view('index')
+#5 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\system\CodeIgniter.php(832): App\Controllers\Gym->index()
+#6 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gym))
+#7 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\KANTOR\Documents\Code\Project Homan\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\KANTOR...')
+#10 {main}
