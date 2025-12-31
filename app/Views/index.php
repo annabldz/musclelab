@@ -349,7 +349,7 @@
   <nav>
     <div class="logo">
       <img src="<?= base_url('assets/logo/LogoText.png')?>" alt="Logo">
-      <img src="<?= base_url('assets/logo/icon.png')?>" alt="Logo">
+      <img src="<?= base_url('assets/logo/Icon.png')?>" alt="Logo">
     </div>
 
     <button class="menu-toggle" id="menuToggle">
